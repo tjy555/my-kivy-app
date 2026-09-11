@@ -27,6 +27,9 @@ jobs:
             zlib1g-dev libncurses5-dev libncursesw5-dev \
             libtinfo5 cmake libffi-dev libssl-dev
 
+          wget http://security.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_6.3-2ubuntu0.2_amd64.deb
+          sudo apt install -y ./libtinfo5_6.3-2ubuntu0.2_amd64.deb
+
       - name: 安装 Buildozer 和 Cython
         run: |
           pip install --upgrade pip
